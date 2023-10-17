@@ -8,7 +8,6 @@ import {
   sepolia,
 } from "viem/chains";
 import { alchemyApiKey } from "./apiKeys";
-
 export interface ChainIdToUrl {
   [key: number]: string;
 }
@@ -21,7 +20,6 @@ export const chainIdToEtherscanUrl: ChainIdToUrl = {
   137: "https://polygonscan.com",
   80001: "https://mumbai.polygonscan.com",
 };
-
 export const chainIdToOpenseaAssetUrl: ChainIdToUrl = {
   1: "https://opensea.io/assets/ethereum",
   5: "https://testnets.opensea.io/assets/goerli",
@@ -31,7 +29,6 @@ export const chainIdToOpenseaAssetUrl: ChainIdToUrl = {
   137: "https://opensea.io/assets/matic",
   80001: "https://testnets.opensea.io/assets/mumbai",
 };
-
 export const chainIdToViemNetwork: { [key: number]: any } = {
   1: mainnet,
   5: goerli,
@@ -41,7 +38,6 @@ export const chainIdToViemNetwork: { [key: number]: any } = {
   137: polygon,
   80001: polygonMumbai,
 };
-
 export const chainIdToRpcUrl: ChainIdToUrl = {
   1: `https://eth-mainnet.g.alchemy.com/v2/${alchemyApiKey}`,
   5: `https://eth-goerli.g.alchemy.com/v2/${alchemyApiKey}`,
